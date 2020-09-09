@@ -1,196 +1,257 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
 
-  
-  <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+    
+
+    <!-- 渲染优化 -->
+    <meta name="renderer" content="webkit">
+    <meta name="force-rendering" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="HandheldFriendly" content="True" >
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!--icon-->
+
+    <link rel="shortcut icon" type='image/x-icon' href="/favicon.ico">
+
+
+    <!-- meta -->
+
+
+<title>Worthy&amp;Amber</title>
+
+
+
+
+
+    <!-- OpenGraph -->
+ 
+    <meta property="og:type" content="website">
+<meta property="og:title" content="Worthy&amp;Amber">
 <meta property="og:url" content="http://example.com/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="Worthy&amp;Amber">
 <meta property="og:locale" content="en_US">
-<meta property="article:author" content="John Doe">
-<meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  
-<link rel="stylesheet" href="/css/style.css">
+<meta property="article:author" content="Worthy">
+<meta name="twitter:card" content="summary_large_image">
+
+
+    
+<link rel="stylesheet" href="/css/style/main.css">
+ 
+
+
+
+    
+    
+    
+
+    
+
+     
+
+    <!-- custom head -->
 
 <meta name="generator" content="Hexo 5.1.1"></head>
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
+    <body>
+        <div id="app">
+            <header class="header">
+    <div class="header__left">
+        <a href="/" class="button">
+            <span class="logo__text">
+                Demo
+            </span>
+        </a>
     </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
+    <div class="header__right">
         
-          <a class="main-nav-link" href="/">Home</a>
+            <div class="navbar__menus">
+                
+                    <a href="/" class="navbar-menu button">
+                        首页
+                    </a>
+                
+                    <a href="/tags/" class="navbar-menu button">
+                        标签
+                    </a>
+                
+                    <a href="/archives/" class="navbar-menu button">
+                        归档
+                    </a>
+                
+                    <a href="/friends/" class="navbar-menu button">
+                        友链
+                    </a>
+                
+                    <a href="/page/" class="navbar-menu button">
+                        Page
+                    </a>
+                
+            </div>
         
-          <a class="main-nav-link" href="/archives">Archives</a>
         
-      </nav>
-      <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+
         
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
-      </div>
+        
+
+        
+
+        
+            <a class="dropdown-icon button" id="btn-dropdown">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width='24' height='24' fill="none" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round">
+                    <path fill="currentColor" d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,15.2,16.686,15.2z M16.686,9.257H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,9.257,16.686,9.257z"></path>
+                </svg>
+            </a>
+            <div class="dropdown-menus" id="dropdown-menus">
+                <a class="dropback-icon button" id="btn-dropback">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width='24' height='24' fill="none" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round">
+                        <path fill="currentColor" d="M11.469,10l7.08-7.08c0.406-0.406,0.406-1.064,0-1.469c-0.406-0.406-1.063-0.406-1.469,0L10,8.53l-7.081-7.08c-0.406-0.406-1.064-0.406-1.469,0c-0.406,0.406-0.406,1.063,0,1.469L8.531,10L1.45,17.081c-0.406,0.406-0.406,1.064,0,1.469c0.203,0.203,0.469,0.304,0.735,0.304c0.266,0,0.531-0.101,0.735-0.304L10,11.469l7.08,7.081c0.203,0.203,0.469,0.304,0.735,0.304c0.267,0,0.532-0.101,0.735-0.304c0.406-0.406,0.406-1.064,0-1.469L11.469,10z"></path>
+                    </svg>
+                </a>
+                
+                    <a href="/" class="dropdown-menu button">
+                        首页
+                    </a>
+                
+                    <a href="/tags/" class="dropdown-menu button">
+                        标签
+                    </a>
+                
+                    <a href="/archives/" class="dropdown-menu button">
+                        归档
+                    </a>
+                
+                    <a href="/friends/" class="dropdown-menu button">
+                        友链
+                    </a>
+                
+                    <a href="/page/" class="dropdown-menu button">
+                        Page
+                    </a>
+                
+            </div>
+            <script>
+                document.getElementById('btn-dropdown').addEventListener('click', () => {
+                    const dd = document.getElementById('dropdown-menus');
+                    requestAnimationFrame(() => {
+                        dd.style.display = 'flex';
+                        requestAnimationFrame(() => {
+                            dd.style.transform = 'translateY(0)';
+                            dd.style.opacity = '1';
+                        });
+                    });
+                });
+                document.getElementById('btn-dropback').addEventListener('click', () => {
+                    const dd = document.getElementById('dropdown-menus');
+                    dd.style.transform = 'translateY(2.25rem)';                    
+                    dd.style.opacity = '0';
+                    setTimeout(() => {dd.style.display = 'none';}, 350);
+                });
+            </script>
+        
     </div>
-  </div>
 </header>
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-A-Letter-from-Worthy-to-Amber" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/09/09/A-Letter-from-Worthy-to-Amber/" class="article-date">
-  <time datetime="2020-09-09T14:07:14.000Z" itemprop="datePublished">2020-09-09</time>
+
+
+    <div class="cover">
+        <div class="cover__logo">
+            
+                <h1>Demo</h1>
+            
+        </div>
+        
+            <div class="cover__intro">
+                <p>Hi, nice to meet you!</p>
+ 
+            </div>
+        
+    </div>
+
+            <main class="main">
+    
+    <div class="posts">
+        
+            
+                <div class='post-entry content-card'>
+                    <div class="post-entry__header"></div>
+<div class="post-entry__content">
+    <h2 class="post-entry__title">
+        A Letter from Worthy to Amber
+    </h2>
+    
+</div>
+<div class="post-entry__meta">
+    <a href="/archives/2020/09/" class="post-meta__date button">
+    2020-09-09
 </a>
     
-  </div>
-  <div class="article-inner">
+ 
+</div>
+<div class="post-entry__tags">
     
-    
-      <header class="article-header">
+</div> 
+<a href="/2020/09/09/A-Letter-from-Worthy-to-Amber/" class="post-entry__link">Link</a>
+                </div>
+            
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/09/09/A-Letter-from-Worthy-to-Amber/">A Letter from Worthy to Amber</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>To Haiyan：</p>
-<p>今天正好是我们相识两个月，记得那天我在内网看到了你，还没来得及写“喜欢的信”就迫不及待地加了好友，临时从相亲网站上找来模版，拼凑了一段尴尬的自我介绍。于是，我们就算认识了。</p>
-<p>其实这件事我一直记着，却迟迟没开始写。因为在我认识里，“喜欢”和“好感”是两种不一样的东西：“好感”可能只是一个眼神，而“喜欢”却是一段旅程。</p>
-<p>在人生的旅程里，两个月是一段不长不短的时间。虽然不足以把绿叶染黄，让游子归家，却足够在人的心中种下一粒种子，逐渐生根发芽。</p>
-<p>第一次看到你的名字，让我有了一种故人相见的感觉。这种感觉给了我很大的勇气，想去认真了解一个女生。我努力地尝试和你聊天，分享彼此的生活——虽然很多时候，我们好像生活在不同的时区。我能真切地体会到我们之间从陌生到熟悉，再到“约会”的经历，就像看着亲手养育的树苗在一天天长大。这也让我相信：认真对待生活的人，生活也会用同样的认真回应你。</p>
-<p>说起我运动的目的，并不只是为了减肥，还为了在见面时展现更好的自己。虽然之前放弃过无数次，但这一次，我坚持了下来。当我坚持后发现，运动带给我的改变远远超过了当初的预期。它让我变得积极、快乐和自信，也让我的内心更加平和。原来世界上最重要的事情不是取悦别人，而是关爱自己。</p>
-<p>还有，遇到你之后我才发现，世界上还有比一点点更甜的奶茶，还有全是奶的咖啡，还有整夜逛淘宝的工作。还有很有很多有意思的事情，值得一起去探索和体验。</p>
-<p>当然，旅程的奇妙之处还在于存在各种戏剧性的未知。就好像登山者气喘吁吁地爬到了山腰，刚准备向山顶进发时，却一个失足掉入了悬崖。虽然让人感到意外和遗憾，但或许这种不确定性本身就是一种魅力吧。没准故事的结局是，主人公在掉落悬崖后，意外学会绝世武功，转眼就飞到了山顶！</p>
-<p>庄子说：天地者，万物之逆旅。每个人生来都是孤独的旅人，各自寻找自己在世间的归宿。很高兴在这段旅途中有你相伴，也感谢你帮助我成就更好的自己。</p>
-<p>我是一个喜欢善始善终的人。不管未来如何，只要努力做到认真对待每一分钟，也就不留遗憾了。更何况，任何过往的经历都会融入自己的生命里，成为“我”的一部分。</p>
-<p>本来想用传统的方式写这封信的，但又感觉有点矫情，而且好像也找不到合适的时间亲手交给你，所以才想到了这种方式。互联网是有记忆的，也许几百年后的数字考古队在探索尘封往事的时候，还能在字节的洪流中找到这一小滴露水，听起来也是一件很酷的事情呢。（主要还是因为我已经很久没提笔了，写出来的字可能比我写的代码还要丑吧，哈哈）</p>
-<p>最后，祝端午安康！</p>
-<p> Wuxing</p>
-
-      
     </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2020/09/09/A-Letter-from-Worthy-to-Amber/" data-id="ckevhuuw40000pugfd85b5oyi" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
-
-</section>
+    
         
-          <aside id="sidebar">
-  
     
 
-  
+
+</main>
+
+            <footer class="footer">
     
 
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/09/">September 2020</a></li></ul>
-    </div>
-  </div>
 
-
-  
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
+     
+ 
+
+ 
+    
         
-          <li>
-            <a href="/2020/09/09/A-Letter-from-Worthy-to-Amber/">A Letter from Worthy to Amber</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2020 John Doe<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
+        <p class="footer-copyright">
+            Copyright&nbsp;©&nbsp;2020&nbsp;<a href="/">Worthy&amp;Amber</a>
+        </p>
+    
+    
+    <p>Powered by <a href="https://hexo.io" target="_blank">Hexo</a> | Theme - <a href="https://github.com/ChrAlpha/hexo-theme-cards" target="_blank">Cards</a></p>
 </footer>
-    </div>
-    <nav id="mobile-nav">
+
+        </div>
+         
+
+ 
+
+ 
+
+ 
+
   
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
+
+
+
+ 
+
+
     
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
-
-  
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-
-  
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
+ 
 
 
 
 
-<script src="/js/script.js"></script>
 
 
 
 
-  </div>
-</body>
+    </body>
 </html>
